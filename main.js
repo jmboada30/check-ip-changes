@@ -1,5 +1,5 @@
 import publicIp from "public-ip";
-import * as local from "./src/utils/localdb.js";
+import * as local from "./src/utils/local-data.js";
 import * as ipService from "./src/services/ip.service.js";
 import dotenv from "dotenv";
 dotenv.config();
