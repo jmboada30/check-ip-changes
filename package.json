@@ -1,0 +1,21 @@
+{
+  "name": "check-ip-change",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ip",
+    "changes"
+  ],
+  "author": "Joel M Boada",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "public-ip": "^5.0.0"
+  },
+  "type": "module"
+}
