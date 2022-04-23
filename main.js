@@ -7,13 +7,13 @@ dotenv.config();
 async function getIp() {
   const currentIp = await publicIp.v4();
 
-  if (!currentIp) return;
+  if (!currentIp) throw Error('No current ip');
 
   const payload = {
     ip_publica: currentIp,
     ip_privada: "0.0.0.0",
     id_cliente: "1",
-    key: process.env.key,
+    ok: process.env.key,
   };
 
   await ipService.sendIP(payload);
